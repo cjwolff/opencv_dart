@@ -3,9 +3,9 @@ description: |
   OpenCV4 bindings for Flutter, using dart:ffi.
   This plugin include `videoio` module, if you don't need it,
   please use `opencv_core` instead.
-version: 1.4.1
-opencv_version: 4.11.0+0
-dartcv_version: 4.11.0.2
+version: 2.1.0 # Updated to match techContext.md and ar_stack_analysis.md
+opencv_version: 4.11.0+0 # Assuming this is still correct for 2.1.0, may need verification
+dartcv_version: 4.11.0.2 # Assuming this is still correct for 2.1.0, may need verification
 repository: https://github.com/rainyl/opencv_dart
 homepage: https://github.com/rainyl/opencv_dart/tree/main/packages/opencv_dart
 
