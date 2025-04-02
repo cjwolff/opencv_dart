@@ -49,9 +49,15 @@ set(DARTCV_WITH_GAPI OFF CACHE BOOL "Enable OpenCV gapi module" FORCE)
 set(DARTCV_WORLD OFF CACHE BOOL "Enable OpenCV world module" FORCE)
 
 set(OPENCV_VERSION "${_version_opencv}")
-set(DARTCV_DISABLE_DOWNLOAD_OPENCV OFF)
+set(DARTCV_DISABLE_DOWNLOAD_OPENCV OFF) # Re-enable download
 
 include(FetchContent)
+# Attempt to influence download script generation by changing verbosity - Reverted, did not help
+# set(FETCHCONTENT_QUIET FALSE)
+
+# WORKAROUND: Disable automatic OpenCV download by libdartcv - Reverted
+# set(DARTCV_DISABLE_DOWNLOAD_OPENCV ON)
+
 FetchContent_Declare(
   libdartcv
   GIT_REPOSITORY https://github.com/rainyl/dartcv.git
